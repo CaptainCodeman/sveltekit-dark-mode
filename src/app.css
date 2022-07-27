@@ -1,0 +1,9 @@
+/* Write your global styles here, in PostCSS syntax */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* an instant switch can be a little jarring, this animates the change */
+.transition-dark {
+  @apply transition-colors ease-in-out duration-300;
+}

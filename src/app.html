@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
+		<meta name="viewport" content="width=device-width" />
+		<script>
+			// set dark mode class based on user preference / device settings (here to avoid FOUC)
+			if (localStorage.theme === 'dark' || (!localStorage.theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+				document.documentElement.classList.add('dark')
+			} else {
+				document.documentElement.classList.remove('dark')
+			}
+		</script>
+		%sveltekit.head%
+	</head>
+	<body class="dark:bg-slate-800 transition-dark">
+		%sveltekit.body%
+	</body>
+</html>
