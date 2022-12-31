@@ -1,3 +1,5 @@
+NOTE: See [svelte-theme-select](https://github.com/CaptainCodeman/svelte-theme-select) for a better, more complete package
+
 # sveltekit-dark-mode
 
 Simple example showing dark mode theme toggle using SvelteKit + TailwindCSS
